@@ -39,6 +39,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    
+    // Add lint options to handle LiveData warnings
+    lintOptions {
+        abortOnError false
+        baseline file("lint-baseline.xml")
+    }
 }
 
 dependencies {

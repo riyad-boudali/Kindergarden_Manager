@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.4.2" type="incidents">
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;User Management&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_admin_dashboard.xml"
+            line="44"
+            column="17"
+            startOffset="1741"
+            endLine="44"
+            endColumn="47"
+            endOffset="1771"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;View All Users&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_admin_dashboard.xml"
+            line="53"
+            column="17"
+            startOffset="2092"
+            endLine="53"
+            endColumn="46"
+            endOffset="2121"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Add New User&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_admin_dashboard.xml"
+            line="60"
+            column="17"
+            startOffset="2359"
+            endLine="60"
+            endColumn="44"
+            endOffset="2386"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;System Settings&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_admin_dashboard.xml"
+            line="84"
+            column="17"
+            startOffset="3245"
+            endLine="84"
+            endColumn="47"
+            endOffset="3275"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Application Settings&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_admin_dashboard.xml"
+            line="93"
+            column="17"
+            startOffset="3598"
+            endLine="93"
+            endColumn="52"
+            endOffset="3633"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Menu Planning&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_kitchen_staff_dashboard.xml"
+            line="44"
+            column="17"
+            startOffset="1748"
+            endLine="44"
+            endColumn="45"
+            endOffset="1776"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;View Weekly Menus&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_kitchen_staff_dashboard.xml"
+            line="53"
+            column="17"
+            startOffset="2097"
+            endLine="53"
+            endColumn="49"
+            endOffset="2129"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Create New Menu&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_kitchen_staff_dashboard.xml"
+            line="60"
+            column="17"
+            startOffset="2370"
+            endLine="60"
+            endColumn="47"
+            endOffset="2400"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Dietary Restrictions&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_kitchen_staff_dashboard.xml"
+            line="84"
+            column="17"
+            startOffset="3262"
+            endLine="84"
+            endColumn="52"
+            endOffset="3297"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;View Children&apos;s Restrictions&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_kitchen_staff_dashboard.xml"
+            line="93"
+            column="17"
+            startOffset="3625"
+            endLine="93"
+            endColumn="60"
+            endOffset="3668"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Inventory Management&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_kitchen_staff_dashboard.xml"
+            line="117"
+            column="17"
+            startOffset="4527"
+            endLine="117"
+            endColumn="52"
+            endOffset="4562"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Manage Inventory&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_kitchen_staff_dashboard.xml"
+            line="126"
+            column="17"
+            startOffset="4889"
+            endLine="126"
+            endColumn="48"
+            endOffset="4920"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Order Supplies&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_kitchen_staff_dashboard.xml"
+            line="133"
+            column="17"
+            startOffset="5180"
+            endLine="133"
+            endColumn="46"
+            endOffset="5209"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;My Children&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_parent_dashboard.xml"
+            line="44"
+            column="17"
+            startOffset="1737"
+            endLine="44"
+            endColumn="43"
+            endOffset="1763"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;View Children&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_parent_dashboard.xml"
+            line="53"
+            column="17"
+            startOffset="2087"
+            endLine="53"
+            endColumn="45"
+            endOffset="2115"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Attendance Records&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_parent_dashboard.xml"
+            line="60"
+            column="17"
+            startOffset="2356"
+            endLine="60"
+            endColumn="50"
+            endOffset="2389"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Meal Plans&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_parent_dashboard.xml"
+            line="84"
+            column="17"
+            startOffset="3236"
+            endLine="84"
+            endColumn="42"
+            endOffset="3261"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Weekly Menu&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_parent_dashboard.xml"
+            line="93"
+            column="17"
+            startOffset="3585"
+            endLine="93"
+            endColumn="43"
+            endOffset="3611"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Communication&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_parent_dashboard.xml"
+            line="117"
+            column="17"
+            startOffset="4463"
+            endLine="117"
+            endColumn="45"
+            endOffset="4491"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Messages&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_parent_dashboard.xml"
+            line="126"
+            column="17"
+            startOffset="4811"
+            endLine="126"
+            endColumn="40"
+            endOffset="4834"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;View Announcements&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_parent_dashboard.xml"
+            line="133"
+            column="17"
+            startOffset="5094"
+            endLine="133"
+            endColumn="50"
+            endOffset="5127"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Class Management&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_teacher_dashboard.xml"
+            line="44"
+            column="17"
+            startOffset="1746"
+            endLine="44"
+            endColumn="48"
+            endOffset="1777"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;My Classes&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_teacher_dashboard.xml"
+            line="53"
+            column="17"
+            startOffset="2100"
+            endLine="53"
+            endColumn="42"
+            endOffset="2125"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Take Attendance&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_teacher_dashboard.xml"
+            line="60"
+            column="17"
+            startOffset="2366"
+            endLine="60"
+            endColumn="47"
+            endOffset="2396"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Communication&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_teacher_dashboard.xml"
+            line="84"
+            column="17"
+            startOffset="3255"
+            endLine="84"
+            endColumn="45"
+            endOffset="3283"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Messages&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_teacher_dashboard.xml"
+            line="93"
+            column="17"
+            startOffset="3603"
+            endLine="93"
+            endColumn="40"
+            endOffset="3626"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Create Announcement&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_teacher_dashboard.xml"
+            line="100"
+            column="17"
+            startOffset="3886"
+            endLine="100"
+            endColumn="51"
+            endOffset="3920"/>
+    </incident>
+
+    <incident
+        id="Typos"
+        severity="warning"
+        message="&quot;Kindergarden&quot; is a common misspelling; did you mean &quot;Kindergarten&quot;?">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with &quot;Kindergarten&quot;"
+                oldString="Kindergarden"
+                replacement="Kindergarten"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="3"
+            column="29"
+            startOffset="79"
+            endLine="3"
+            endColumn="29"
+            endOffset="91"/>
+    </incident>
+
+    <incident
+        id="Typos"
+        severity="warning"
+        message="&quot;Kindergarden&quot; is a common misspelling; did you mean &quot;Kindergarten&quot;?">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with &quot;Kindergarten&quot;"
+                oldString="Kindergarden"
+                replacement="Kindergarten"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="4"
+            column="39"
+            startOffset="147"
+            endLine="4"
+            endColumn="39"
+            endOffset="159"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/kindergardenmanager/ui/activity/AdminDashboardActivity.kt"
+            line="27"
+            column="26"
+            startOffset="920"
+            endLine="27"
+            endColumn="81"
+            endOffset="975"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/kindergardenmanager/ui/activity/KitchenStaffDashboardActivity.kt"
+            line="27"
+            column="26"
+            startOffset="945"
+            endLine="27"
+            endColumn="81"
+            endOffset="1000"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/kindergardenmanager/ui/activity/ParentDashboardActivity.kt"
+            line="27"
+            column="26"
+            startOffset="924"
+            endLine="27"
+            endColumn="81"
+            endOffset="979"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/kindergardenmanager/ui/activity/TeacherDashboardActivity.kt"
+            line="27"
+            column="26"
+            startOffset="928"
+            endLine="27"
+            endColumn="81"
+            endOffset="983"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.9.0 is available: 1.16.0">
+        <fix-replace
+            description="Change to 1.16.0"
+            family="Update versions"
+            oldString="1.9.0"
+            replacement="1.16.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="51"
+            column="20"
+            startOffset="1208"
+            endLine="51"
+            endColumn="50"
+            endOffset="1238"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.0">
+        <fix-replace
+            description="Change to 1.7.0"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.7.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="52"
+            column="20"
+            startOffset="1258"
+            endLine="52"
+            endColumn="56"
+            endOffset="1294"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.8.0 is available: 1.12.0">
+        <fix-replace
+            description="Change to 1.12.0"
+            family="Update versions"
+            oldString="1.8.0"
+            replacement="1.12.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="53"
+            column="20"
+            startOffset="1314"
+            endLine="53"
+            endColumn="64"
+            endOffset="1358"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1">
+        <fix-replace
+            description="Change to 2.2.1"
+            family="Update versions"
+            oldString="2.1.4"
+            replacement="2.2.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="54"
+            column="20"
+            startOffset="1378"
+            endLine="54"
+            endColumn="70"
+            endOffset="1428"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-runtime than 2.5.0 is available: 2.7.1">
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="58"
+            column="20"
+            startOffset="1507"
+            endLine="58"
+            endColumn="62"
+            endOffset="1549"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-ktx than 2.5.0 is available: 2.7.1">
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="59"
+            column="20"
+            startOffset="1569"
+            endLine="59"
+            endColumn="58"
+            endOffset="1607"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.6.1 is available: 2.9.0">
+        <fix-replace
+            description="Change to 2.9.0"
+            family="Update versions"
+            oldString="2.6.1"
+            replacement="2.9.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="63"
+            column="20"
+            startOffset="1713"
+            endLine="63"
+            endColumn="70"
+            endOffset="1763"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.6.1 is available: 2.9.0">
+        <fix-replace
+            description="Change to 2.9.0"
+            family="Update versions"
+            oldString="2.6.1"
+            replacement="2.9.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="64"
+            column="20"
+            startOffset="1783"
+            endLine="64"
+            endColumn="69"
+            endOffset="1832"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1">
+        <fix-replace
+            description="Change to 1.2.1"
+            family="Update versions"
+            oldString="1.1.5"
+            replacement="1.2.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="70"
+            column="31"
+            startOffset="2040"
+            endLine="70"
+            endColumn="62"
+            endOffset="2071"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1">
+        <fix-replace
+            description="Change to 3.6.1"
+            family="Update versions"
+            oldString="3.5.1"
+            replacement="3.6.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="71"
+            column="31"
+            startOffset="2102"
+            endLine="71"
+            endColumn="75"
+            endOffset="2146"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/admin_background` with a theme that also paints a background (inferred theme is `@style/Theme.KindergardenManager`)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_admin_dashboard.xml"
+            line="7"
+            column="5"
+            startOffset="341"
+            endLine="7"
+            endColumn="49"
+            endOffset="385"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/kitchen_background` with a theme that also paints a background (inferred theme is `@style/Theme.KindergardenManager`)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_kitchen_staff_dashboard.xml"
+            line="7"
+            column="5"
+            startOffset="341"
+            endLine="7"
+            endColumn="51"
+            endOffset="387"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/parent_background` with a theme that also paints a background (inferred theme is `@style/Theme.KindergardenManager`)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_parent_dashboard.xml"
+            line="7"
+            column="5"
+            startOffset="341"
+            endLine="7"
+            endColumn="50"
+            endOffset="386"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/teacher_background` with a theme that also paints a background (inferred theme is `@style/Theme.KindergardenManager`)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_teacher_dashboard.xml"
+            line="7"
+            column="5"
+            startOffset="341"
+            endLine="7"
+            endColumn="51"
+            endOffset="387"/>
+    </incident>
+
+</incidents>

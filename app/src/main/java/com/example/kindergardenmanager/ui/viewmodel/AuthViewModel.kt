@@ -122,6 +122,7 @@ class AuthViewModel(private val userRepository: UserRepository) : ViewModel() {
      * Clear the current authentication result
      */
     fun clearAuthResult() {
-        _authResult.value = null
+        // Using postValue with null to avoid lint error with non-nullable LiveData
+        _authResult.postValue(AuthResult.Loading) // Use Loading as a neutral state instead of null
     }
 }

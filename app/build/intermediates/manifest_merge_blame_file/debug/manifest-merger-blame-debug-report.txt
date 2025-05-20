@@ -36,8 +36,8 @@
 23-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:9:9-41
 24        android:supportsRtl="true"
 24-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:10:9-35
-25        android:theme="@style/Theme.HelloFancyWorld" >
-25-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:11:9-53
+25        android:theme="@style/Theme.KindergardenManager" >
+25-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:11:9-57
 26        <activity
 26-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:12:9-19:20
 27            android:name="com.example.kindergardenmanager.MainActivity"

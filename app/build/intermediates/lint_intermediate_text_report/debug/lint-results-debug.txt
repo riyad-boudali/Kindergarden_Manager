@@ -1,0 +1,284 @@
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_main.xml:18: Warning: Attribute elevation is only used in API level 21 and higher (current min is 19) [UnusedAttribute]
+        android:elevation="8dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedAttribute":
+   This check finds attributes set in XML files that were introduced in a
+   version newer than the oldest version targeted by your application (with
+   the minSdkVersion attribute).
+
+   This is not an error; the application will simply ignore the attribute.
+   However, if the attribute is important to the appearance or functionality
+   of your application, you should consider finding an alternative way to
+   achieve the same result with only available attributes, and then you can
+   optionally create a copy of the layout in a layout-vNN folder which will be
+   used on API NN or higher where you can take advantage of the newer
+   attribute.
+
+   Note: This check does not only apply to attributes. For example, some tags
+   can be unused too, such as the new <tag> element in layouts introduced in
+   API 21.
+
+/home/riyad/Desktop/Projects/kindergarden_manager/app/build.gradle:51: Warning: A newer version of androidx.core:core-ktx than 1.9.0 is available: 1.16.0 [GradleDependency]
+    implementation 'androidx.core:core-ktx:1.9.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/build.gradle:52: Warning: A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.0 [GradleDependency]
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/build.gradle:53: Warning: A newer version of com.google.android.material:material than 1.8.0 is available: 1.12.0 [GradleDependency]
+    implementation 'com.google.android.material:material:1.8.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/build.gradle:54: Warning: A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1 [GradleDependency]
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/build.gradle:58: Warning: A newer version of androidx.room:room-runtime than 2.5.0 is available: 2.7.1 [GradleDependency]
+    implementation "androidx.room:room-runtime:$room_version"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/build.gradle:59: Warning: A newer version of androidx.room:room-ktx than 2.5.0 is available: 2.7.1 [GradleDependency]
+    implementation "androidx.room:room-ktx:$room_version"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/build.gradle:63: Warning: A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.6.1 is available: 2.9.0 [GradleDependency]
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/build.gradle:64: Warning: A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.6.1 is available: 2.9.0 [GradleDependency]
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.1"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/build.gradle:70: Warning: A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1 [GradleDependency]
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/build.gradle:71: Warning: A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1 [GradleDependency]
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/values/strings.xml:3: Warning: "Kindergarden" is a common misspelling; did you mean "Kindergarten"? [Typos]
+    <string name="app_name">Kindergarden Manager</string>
+                            ^
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/values/strings.xml:4: Warning: "Kindergarden" is a common misspelling; did you mean "Kindergarten"? [Typos]
+    <string name="hello_world">Hello, Kindergarden World!</string>
+                                      ^
+
+   Explanation for issues of type "Typos":
+   This check looks through the string definitions, and if it finds any words
+   that look like likely misspellings, they are flagged.
+
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_admin_dashboard.xml:7: Warning: Possible overdraw: Root element paints background @color/admin_background with a theme that also paints a background (inferred theme is @style/Theme.KindergardenManager) [Overdraw]
+    android:background="@color/admin_background"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_kitchen_staff_dashboard.xml:7: Warning: Possible overdraw: Root element paints background @color/kitchen_background with a theme that also paints a background (inferred theme is @style/Theme.KindergardenManager) [Overdraw]
+    android:background="@color/kitchen_background"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_parent_dashboard.xml:7: Warning: Possible overdraw: Root element paints background @color/parent_background with a theme that also paints a background (inferred theme is @style/Theme.KindergardenManager) [Overdraw]
+    android:background="@color/parent_background"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_teacher_dashboard.xml:7: Warning: Possible overdraw: Root element paints background @color/teacher_background with a theme that also paints a background (inferred theme is @style/Theme.KindergardenManager) [Overdraw]
+    android:background="@color/teacher_background"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_main.xml:2: Warning: The resource R.layout.activity_main appears to be unused [UnusedResources]
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+^
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/values/colors.xml:3: Warning: The resource R.color.purple_200 appears to be unused [UnusedResources]
+    <color name="purple_200">#FFBB86FC</color>
+           ~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/values/colors.xml:13: Warning: The resource R.color.colorPrimaryDark appears to be unused [UnusedResources]
+    <color name="colorPrimaryDark">#FF388E3C</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/values/colors.xml:14: Warning: The resource R.color.colorAccent appears to be unused [UnusedResources]
+    <color name="colorAccent">#FFFFEB3B</color>
+           ~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/values/colors.xml:15: Warning: The resource R.color.colorBackground appears to be unused [UnusedResources]
+    <color name="colorBackground">#FFF5F5F5</color>
+           ~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/values/colors.xml:18: Warning: The resource R.color.colorAdmin appears to be unused [UnusedResources]
+    <color name="colorAdmin">#FFFF5722</color>
+           ~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/values/colors.xml:19: Warning: The resource R.color.colorTeacher appears to be unused [UnusedResources]
+    <color name="colorTeacher">#FF2196F3</color>
+           ~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/values/colors.xml:20: Warning: The resource R.color.colorParent appears to be unused [UnusedResources]
+    <color name="colorParent">#FF9C27B0</color>
+           ~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/values/colors.xml:21: Warning: The resource R.color.colorKitchen appears to be unused [UnusedResources]
+    <color name="colorKitchen">#FFFF9800</color>
+           ~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml:2: Warning: The resource R.mipmap.ic_launcher appears to be unused [UnusedResources]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml:2: Warning: The resource R.mipmap.ic_launcher_round appears to be unused [UnusedResources]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/values/strings.xml:4: Warning: The resource R.string.hello_world appears to be unused [UnusedResources]
+    <string name="hello_world">Hello, Kindergarden World!</string>
+            ~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/values/strings.xml:23: Warning: The resource R.string.admin appears to be unused [UnusedResources]
+    <string name="admin">Administrator</string>
+            ~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/values/themes.xml:26: Warning: The resource R.style.Theme_KindergardenManager_Night appears to be unused [UnusedResources]
+    <style name="Theme.KindergardenManager.Night" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/java/com/example/kindergardenmanager/ui/activity/AdminDashboardActivity.kt:27: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        tvWelcome.text = "${getString(R.string.welcome)}, $firstName $lastName!"
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/java/com/example/kindergardenmanager/ui/activity/KitchenStaffDashboardActivity.kt:27: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        tvWelcome.text = "${getString(R.string.welcome)}, $firstName $lastName!"
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/java/com/example/kindergardenmanager/ui/activity/ParentDashboardActivity.kt:27: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        tvWelcome.text = "${getString(R.string.welcome)}, $firstName $lastName!"
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/java/com/example/kindergardenmanager/ui/activity/TeacherDashboardActivity.kt:27: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        tvWelcome.text = "${getString(R.string.welcome)}, $firstName $lastName!"
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_admin_dashboard.xml:44: Warning: Hardcoded string "User Management", should use @string resource [HardcodedText]
+                android:text="User Management"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_admin_dashboard.xml:53: Warning: Hardcoded string "View All Users", should use @string resource [HardcodedText]
+                android:text="View All Users" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_admin_dashboard.xml:60: Warning: Hardcoded string "Add New User", should use @string resource [HardcodedText]
+                android:text="Add New User" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_admin_dashboard.xml:84: Warning: Hardcoded string "System Settings", should use @string resource [HardcodedText]
+                android:text="System Settings"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_admin_dashboard.xml:93: Warning: Hardcoded string "Application Settings", should use @string resource [HardcodedText]
+                android:text="Application Settings" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_kitchen_staff_dashboard.xml:44: Warning: Hardcoded string "Menu Planning", should use @string resource [HardcodedText]
+                android:text="Menu Planning"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_kitchen_staff_dashboard.xml:53: Warning: Hardcoded string "View Weekly Menus", should use @string resource [HardcodedText]
+                android:text="View Weekly Menus" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_kitchen_staff_dashboard.xml:60: Warning: Hardcoded string "Create New Menu", should use @string resource [HardcodedText]
+                android:text="Create New Menu" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_kitchen_staff_dashboard.xml:84: Warning: Hardcoded string "Dietary Restrictions", should use @string resource [HardcodedText]
+                android:text="Dietary Restrictions"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_kitchen_staff_dashboard.xml:93: Warning: Hardcoded string "View Children's Restrictions", should use @string resource [HardcodedText]
+                android:text="View Children's Restrictions" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_kitchen_staff_dashboard.xml:117: Warning: Hardcoded string "Inventory Management", should use @string resource [HardcodedText]
+                android:text="Inventory Management"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_kitchen_staff_dashboard.xml:126: Warning: Hardcoded string "Manage Inventory", should use @string resource [HardcodedText]
+                android:text="Manage Inventory" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_kitchen_staff_dashboard.xml:133: Warning: Hardcoded string "Order Supplies", should use @string resource [HardcodedText]
+                android:text="Order Supplies" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_parent_dashboard.xml:44: Warning: Hardcoded string "My Children", should use @string resource [HardcodedText]
+                android:text="My Children"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_parent_dashboard.xml:53: Warning: Hardcoded string "View Children", should use @string resource [HardcodedText]
+                android:text="View Children" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_parent_dashboard.xml:60: Warning: Hardcoded string "Attendance Records", should use @string resource [HardcodedText]
+                android:text="Attendance Records" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_parent_dashboard.xml:84: Warning: Hardcoded string "Meal Plans", should use @string resource [HardcodedText]
+                android:text="Meal Plans"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_parent_dashboard.xml:93: Warning: Hardcoded string "Weekly Menu", should use @string resource [HardcodedText]
+                android:text="Weekly Menu" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_parent_dashboard.xml:117: Warning: Hardcoded string "Communication", should use @string resource [HardcodedText]
+                android:text="Communication"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_parent_dashboard.xml:126: Warning: Hardcoded string "Messages", should use @string resource [HardcodedText]
+                android:text="Messages" />
+                ~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_parent_dashboard.xml:133: Warning: Hardcoded string "View Announcements", should use @string resource [HardcodedText]
+                android:text="View Announcements" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_teacher_dashboard.xml:44: Warning: Hardcoded string "Class Management", should use @string resource [HardcodedText]
+                android:text="Class Management"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_teacher_dashboard.xml:53: Warning: Hardcoded string "My Classes", should use @string resource [HardcodedText]
+                android:text="My Classes" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_teacher_dashboard.xml:60: Warning: Hardcoded string "Take Attendance", should use @string resource [HardcodedText]
+                android:text="Take Attendance" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_teacher_dashboard.xml:84: Warning: Hardcoded string "Communication", should use @string resource [HardcodedText]
+                android:text="Communication"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_teacher_dashboard.xml:93: Warning: Hardcoded string "Messages", should use @string resource [HardcodedText]
+                android:text="Messages" />
+                ~~~~~~~~~~~~~~~~~~~~~~~
+/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/res/layout/activity_teacher_dashboard.xml:100: Warning: Hardcoded string "Create Announcement", should use @string resource [HardcodedText]
+                android:text="Create Announcement" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 62 warnings

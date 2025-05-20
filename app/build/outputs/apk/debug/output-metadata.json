@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.example.hellofancyworld",
+  "applicationId": "com.example.kindergardenmanager",
   "variantName": "debug",
   "elements": [
     {

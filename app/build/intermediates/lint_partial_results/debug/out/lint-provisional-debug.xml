@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.4.2" type="conditional_incidents">
+
+    <incident
+        id="UnusedAttribute"
+        severity="warning"
+        message="">
+        <fix-data requiresApi="21"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="18"
+            column="9"
+            startOffset="673"
+            endLine="18"
+            endColumn="32"
+            endOffset="696"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="19"/>
+            <entry
+                name="requiresApi"
+                int="21"/>
+            <entry
+                name="message"
+                string="Attribute `elevation` is only used in API level 21 and higher (current min is %1$d)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 21">
+        <fix-replace
+            description="Delete tools:targetApi"
+            replacement="">
+            <range
+                file="${:app*debug*sourceProvider*0*resDir*0}/values/themes.xml"
+                startOffset="731"
+                endOffset="750"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/themes.xml"
+            line="15"
+            column="45"
+            startOffset="731"
+            endLine="15"
+            endColumn="64"
+            endOffset="750"/>
+        <map>
+            <condition minGE="21"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 23">
+        <fix-replace
+            description="Delete tools:targetApi"
+            replacement="">
+            <range
+                file="${:app*debug*sourceProvider*0*resDir*0}/values/themes.xml"
+                startOffset="975"
+                endOffset="994"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/themes.xml"
+            line="19"
+            column="51"
+            startOffset="975"
+            endLine="19"
+            endColumn="70"
+            endOffset="994"/>
+        <map>
+            <condition minGE="23"/>
+        </map>
+    </incident>
+
+</incidents>

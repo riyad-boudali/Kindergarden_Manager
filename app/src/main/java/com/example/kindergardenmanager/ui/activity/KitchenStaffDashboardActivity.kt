@@ -3,6 +3,7 @@ package com.example.kindergardenmanager.ui.activity
 import android.os.Bundle
 import android.widget.TextView
 import com.example.kindergardenmanager.R
+import com.example.kindergardenmanager.util.SessionManager
 
 /**
  * Dashboard for Kitchen Staff users
