@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="admin_background">#FFF8E0DE</color>
+    <color name="black">#FF000000</color>
+    <color name="colorAccent">#FFFFEB3B</color>
+    <color name="colorAdmin">#FFFF5722</color>
+    <color name="colorBackground">#FFF5F5F5</color>
+    <color name="colorKitchen">#FFFF9800</color>
+    <color name="colorParent">#FF9C27B0</color>
+    <color name="colorPrimary">#FF4CAF50</color>
+    <color name="colorPrimaryDark">#FF388E3C</color>
+    <color name="colorTeacher">#FF2196F3</color>
+    <color name="kitchen_background">#FFFFF3E0</color>
+    <color name="parent_background">#FFF3E5F5</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teacher_background">#FFE3F2FD</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="admin">Administrator</string>
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="app_name">Kindergarden Manager</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="email_or_username">Email or Username</string>
+    <string name="first_name">First Name</string>
+    <string name="hello_world">Hello, Kindergarden World!</string>
+    <string name="kitchen_dashboard">Kitchen Staff Dashboard</string>
+    <string name="kitchen_staff">Kitchen Staff</string>
+    <string name="last_name">Last Name</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="need_an_account">Need an account? Register</string>
+    <string name="parent">Parent</string>
+    <string name="parent_dashboard">Parent Dashboard</string>
+    <string name="password">Password</string>
+    <string name="phone_optional">Phone (Optional)</string>
+    <string name="register">Register</string>
+    <string name="register_account">Create Account</string>
+    <string name="select_role">Select your role:</string>
+    <string name="teacher">Teacher</string>
+    <string name="teacher_dashboard">Teacher Dashboard</string>
+    <string name="username">Username</string>
+    <string name="welcome">Welcome</string>
+    <style name="Theme.HelloFancyWorld" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/purple_700</item>
+        
+        
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowLightStatusBar" ns1:targetApi="m">false</item>
+        
+        
+        <item name="android:windowBackground">@drawable/gradient_background</item>
+    </style>
+    <style name="Theme.HelloFancyWorld.Night" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+    </style>
+</resources>

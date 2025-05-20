@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kindergarden Manager</string>
+    <string name="hello_world">Hello, Kindergarden World!</string>
+    
+    <!-- Login and Registration -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email_or_username">Email or Username</string>
+    <string name="username">Username</string>
+    <string name="need_an_account">Need an account? Register</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_optional">Phone (Optional)</string>
+    <string name="select_role">Select your role:</string>
+    <string name="register_account">Create Account</string>
+    
+    <!-- User Roles -->
+    <string name="admin">Administrator</string>
+    <string name="teacher">Teacher</string>
+    <string name="parent">Parent</string>
+    <string name="kitchen_staff">Kitchen Staff</string>
+    
+    <!-- Dashboard Titles -->
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="teacher_dashboard">Teacher Dashboard</string>
+    <string name="parent_dashboard">Parent Dashboard</string>
+    <string name="kitchen_dashboard">Kitchen Staff Dashboard</string>
+    
+    <!-- General -->
+    <string name="welcome">Welcome</string>
+    <string name="logout">Logout</string>
+</resources>
