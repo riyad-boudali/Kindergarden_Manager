@@ -22,7 +22,7 @@
 15-->[androidx.core:core:1.9.0] /home/riyad/.gradle/caches/transforms-3/c73afc1fa215d9ca128620a3c01802b0/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:5:5-44:19
+17-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:5:5-105:19
 18        android:name="com.example.kindergardenmanager.KindergardenApplication"
 18-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:6:9-48
 19        android:allowBackup="true"
@@ -62,110 +62,215 @@
 37            android:exported="false" />
 37-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:23:13-37
 38        <activity
-38-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:25:9-27:40
+38-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:25:9-32:20
 39            android:name="com.example.kindergardenmanager.ui.activity.RegisterActivity"
 39-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:26:13-57
-40            android:exported="false" />
+40            android:exported="false"
 40-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:27:13-37
-41        <activity
-41-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:29:9-31:40
-42            android:name="com.example.kindergardenmanager.ui.activity.AdminDashboardActivity"
-42-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:30:13-63
-43            android:exported="false" />
-43-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:31:13-37
-44        <activity
-44-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:33:9-35:40
-45            android:name="com.example.kindergardenmanager.ui.activity.TeacherDashboardActivity"
-45-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:34:13-65
-46            android:exported="false" />
-46-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:35:13-37
-47        <activity
-47-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:37:9-39:40
-48            android:name="com.example.kindergardenmanager.ui.activity.ParentDashboardActivity"
-48-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:38:13-64
-49            android:exported="false" />
-49-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:39:13-37
-50        <activity
-50-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:41:9-43:40
-51            android:name="com.example.kindergardenmanager.ui.activity.KitchenStaffDashboardActivity"
-51-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:42:13-70
-52            android:exported="false" />
-52-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:43:13-37
-53
-54        <provider
-54-->[androidx.emoji2:emoji2:1.2.0] /home/riyad/.gradle/caches/transforms-3/66814d0c9c223a08105bc116aeb53dd5/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-55            android:name="androidx.startup.InitializationProvider"
-55-->[androidx.emoji2:emoji2:1.2.0] /home/riyad/.gradle/caches/transforms-3/66814d0c9c223a08105bc116aeb53dd5/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-56            android:authorities="com.example.kindergardenmanager.androidx-startup"
-56-->[androidx.emoji2:emoji2:1.2.0] /home/riyad/.gradle/caches/transforms-3/66814d0c9c223a08105bc116aeb53dd5/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-57            android:exported="false" >
-57-->[androidx.emoji2:emoji2:1.2.0] /home/riyad/.gradle/caches/transforms-3/66814d0c9c223a08105bc116aeb53dd5/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+41            android:parentActivityName="com.example.kindergardenmanager.ui.activity.LoginActivity" >
+41-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:28:13-68
+42            <meta-data
+42-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:29:13-31:62
+43                android:name="android.support.PARENT_ACTIVITY"
+43-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:30:17-63
+44                android:value=".ui.activity.LoginActivity" />
+44-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:31:17-59
+45        </activity>
+46        <activity
+46-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:34:9-41:20
+47            android:name="com.example.kindergardenmanager.ui.activity.AdminDashboardActivity"
+47-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:35:13-63
+48            android:exported="false"
+48-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:36:13-37
+49            android:parentActivityName="com.example.kindergardenmanager.ui.activity.LoginActivity" >
+49-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:37:13-68
+50            <meta-data
+50-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:29:13-31:62
+51                android:name="android.support.PARENT_ACTIVITY"
+51-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:30:17-63
+52                android:value=".ui.activity.LoginActivity" />
+52-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:31:17-59
+53        </activity>
+54        <activity
+54-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:43:9-50:20
+55            android:name="com.example.kindergardenmanager.ui.activity.TeacherDashboardActivity"
+55-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:44:13-65
+56            android:exported="false"
+56-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:45:13-37
+57            android:parentActivityName="com.example.kindergardenmanager.ui.activity.LoginActivity" >
+57-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:46:13-68
 58            <meta-data
-58-->[androidx.emoji2:emoji2:1.2.0] /home/riyad/.gradle/caches/transforms-3/66814d0c9c223a08105bc116aeb53dd5/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-59                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-59-->[androidx.emoji2:emoji2:1.2.0] /home/riyad/.gradle/caches/transforms-3/66814d0c9c223a08105bc116aeb53dd5/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-60                android:value="androidx.startup" />
-60-->[androidx.emoji2:emoji2:1.2.0] /home/riyad/.gradle/caches/transforms-3/66814d0c9c223a08105bc116aeb53dd5/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-61            <meta-data
-61-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/riyad/.gradle/caches/transforms-3/16c5355b9a526507fa55080a4f407e10/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
-62                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-62-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/riyad/.gradle/caches/transforms-3/16c5355b9a526507fa55080a4f407e10/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
-63                android:value="androidx.startup" />
-63-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/riyad/.gradle/caches/transforms-3/16c5355b9a526507fa55080a4f407e10/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
-64            <meta-data
-64-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-65                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-65-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-66                android:value="androidx.startup" />
-66-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-67        </provider>
-68
-69        <service
-69-->[androidx.room:room-runtime:2.5.0] /home/riyad/.gradle/caches/transforms-3/431c5bb822249be0c6da970373422274/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
-70            android:name="androidx.room.MultiInstanceInvalidationService"
-70-->[androidx.room:room-runtime:2.5.0] /home/riyad/.gradle/caches/transforms-3/431c5bb822249be0c6da970373422274/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
-71            android:directBootAware="true"
-71-->[androidx.room:room-runtime:2.5.0] /home/riyad/.gradle/caches/transforms-3/431c5bb822249be0c6da970373422274/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
-72            android:exported="false" />
-72-->[androidx.room:room-runtime:2.5.0] /home/riyad/.gradle/caches/transforms-3/431c5bb822249be0c6da970373422274/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
-73
-74        <receiver
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-75            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-76            android:directBootAware="false"
-76-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-77            android:enabled="true"
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-78            android:exported="true"
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-79            android:permission="android.permission.DUMP" >
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-80            <intent-filter>
-80-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-81                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-82            </intent-filter>
-83            <intent-filter>
-83-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-84                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-84-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-84-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-85            </intent-filter>
-86            <intent-filter>
-86-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-87                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-88            </intent-filter>
-89            <intent-filter>
-89-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-90                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-90-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-90-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-91            </intent-filter>
-92        </receiver>
-93    </application>
-94
-95</manifest>
+58-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:29:13-31:62
+59                android:name="android.support.PARENT_ACTIVITY"
+59-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:30:17-63
+60                android:value=".ui.activity.LoginActivity" />
+60-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:31:17-59
+61        </activity>
+62        <activity
+62-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:52:9-59:20
+63            android:name="com.example.kindergardenmanager.ui.activity.ParentDashboardActivity"
+63-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:53:13-64
+64            android:exported="false"
+64-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:54:13-37
+65            android:parentActivityName="com.example.kindergardenmanager.ui.activity.LoginActivity" >
+65-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:55:13-68
+66            <meta-data
+66-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:29:13-31:62
+67                android:name="android.support.PARENT_ACTIVITY"
+67-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:30:17-63
+68                android:value=".ui.activity.LoginActivity" />
+68-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:31:17-59
+69        </activity>
+70        <activity
+70-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:61:9-68:20
+71            android:name="com.example.kindergardenmanager.ui.activity.KitchenStaffDashboardActivity"
+71-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:62:13-70
+72            android:exported="false"
+72-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:63:13-37
+73            android:parentActivityName="com.example.kindergardenmanager.ui.activity.LoginActivity" >
+73-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:64:13-68
+74            <meta-data
+74-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:29:13-31:62
+75                android:name="android.support.PARENT_ACTIVITY"
+75-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:30:17-63
+76                android:value=".ui.activity.LoginActivity" />
+76-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:31:17-59
+77        </activity>
+78        <activity
+78-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:70:9-77:20
+79            android:name="com.example.kindergardenmanager.ui.activity.ViewUsersActivity"
+79-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:71:13-58
+80            android:exported="false"
+80-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:72:13-37
+81            android:parentActivityName="com.example.kindergardenmanager.ui.activity.AdminDashboardActivity" >
+81-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:73:13-77
+82            <meta-data
+82-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:29:13-31:62
+83                android:name="android.support.PARENT_ACTIVITY"
+83-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:30:17-63
+84                android:value=".ui.activity.AdminDashboardActivity" />
+84-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:31:17-59
+85        </activity>
+86        <activity
+86-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:79:9-86:20
+87            android:name="com.example.kindergardenmanager.ui.activity.AddUserActivity"
+87-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:80:13-56
+88            android:exported="false"
+88-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:81:13-37
+89            android:parentActivityName="com.example.kindergardenmanager.ui.activity.AdminDashboardActivity" >
+89-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:82:13-77
+90            <meta-data
+90-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:29:13-31:62
+91                android:name="android.support.PARENT_ACTIVITY"
+91-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:30:17-63
+92                android:value=".ui.activity.AdminDashboardActivity" />
+92-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:31:17-59
+93        </activity>
+94        <activity
+94-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:88:9-95:20
+95            android:name="com.example.kindergardenmanager.ui.activity.AppSettingsActivity"
+95-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:89:13-60
+96            android:exported="false"
+96-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:90:13-37
+97            android:parentActivityName="com.example.kindergardenmanager.ui.activity.AdminDashboardActivity" >
+97-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:91:13-77
+98            <meta-data
+98-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:29:13-31:62
+99                android:name="android.support.PARENT_ACTIVITY"
+99-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:30:17-63
+100                android:value=".ui.activity.AdminDashboardActivity" />
+100-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:31:17-59
+101        </activity>
+102        <activity
+102-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:97:9-104:20
+103            android:name="com.example.kindergardenmanager.ui.activity.EditUserActivity"
+103-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:98:13-57
+104            android:exported="false"
+104-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:99:13-37
+105            android:parentActivityName="com.example.kindergardenmanager.ui.activity.ViewUsersActivity" >
+105-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:100:13-72
+106            <meta-data
+106-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:29:13-31:62
+107                android:name="android.support.PARENT_ACTIVITY"
+107-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:30:17-63
+108                android:value=".ui.activity.ViewUsersActivity" />
+108-->/home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:31:17-59
+109        </activity>
+110
+111        <provider
+111-->[androidx.emoji2:emoji2:1.2.0] /home/riyad/.gradle/caches/transforms-3/66814d0c9c223a08105bc116aeb53dd5/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+112            android:name="androidx.startup.InitializationProvider"
+112-->[androidx.emoji2:emoji2:1.2.0] /home/riyad/.gradle/caches/transforms-3/66814d0c9c223a08105bc116aeb53dd5/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+113            android:authorities="com.example.kindergardenmanager.androidx-startup"
+113-->[androidx.emoji2:emoji2:1.2.0] /home/riyad/.gradle/caches/transforms-3/66814d0c9c223a08105bc116aeb53dd5/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+114            android:exported="false" >
+114-->[androidx.emoji2:emoji2:1.2.0] /home/riyad/.gradle/caches/transforms-3/66814d0c9c223a08105bc116aeb53dd5/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+115            <meta-data
+115-->[androidx.emoji2:emoji2:1.2.0] /home/riyad/.gradle/caches/transforms-3/66814d0c9c223a08105bc116aeb53dd5/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+116                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+116-->[androidx.emoji2:emoji2:1.2.0] /home/riyad/.gradle/caches/transforms-3/66814d0c9c223a08105bc116aeb53dd5/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+117                android:value="androidx.startup" />
+117-->[androidx.emoji2:emoji2:1.2.0] /home/riyad/.gradle/caches/transforms-3/66814d0c9c223a08105bc116aeb53dd5/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+118            <meta-data
+118-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/riyad/.gradle/caches/transforms-3/16c5355b9a526507fa55080a4f407e10/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+119                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+119-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/riyad/.gradle/caches/transforms-3/16c5355b9a526507fa55080a4f407e10/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+120                android:value="androidx.startup" />
+120-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/riyad/.gradle/caches/transforms-3/16c5355b9a526507fa55080a4f407e10/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+121            <meta-data
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+122                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+123                android:value="androidx.startup" />
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+124        </provider>
+125
+126        <service
+126-->[androidx.room:room-runtime:2.5.0] /home/riyad/.gradle/caches/transforms-3/431c5bb822249be0c6da970373422274/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+127            android:name="androidx.room.MultiInstanceInvalidationService"
+127-->[androidx.room:room-runtime:2.5.0] /home/riyad/.gradle/caches/transforms-3/431c5bb822249be0c6da970373422274/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+128            android:directBootAware="true"
+128-->[androidx.room:room-runtime:2.5.0] /home/riyad/.gradle/caches/transforms-3/431c5bb822249be0c6da970373422274/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+129            android:exported="false" />
+129-->[androidx.room:room-runtime:2.5.0] /home/riyad/.gradle/caches/transforms-3/431c5bb822249be0c6da970373422274/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+130
+131        <receiver
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+132            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+133            android:directBootAware="false"
+133-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+134            android:enabled="true"
+134-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+135            android:exported="true"
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+136            android:permission="android.permission.DUMP" >
+136-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+137            <intent-filter>
+137-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+138                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+139            </intent-filter>
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+141                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+142            </intent-filter>
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+144                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+144-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+144-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+145            </intent-filter>
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+147                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/riyad/.gradle/caches/transforms-3/5c2a5cebb047ba9aa4b841a7156d494f/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+148            </intent-filter>
+149        </receiver>
+150    </application>
+151
+152</manifest>

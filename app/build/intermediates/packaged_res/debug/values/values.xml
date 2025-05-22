@@ -41,6 +41,7 @@
     <string name="register">Register</string>
     <string name="register_account">Create Account</string>
     <string name="select_role">Select your role:</string>
+    <string name="sign_out">Sign Out</string>
     <string name="teacher">Teacher</string>
     <string name="teacher_dashboard">Teacher Dashboard</string>
     <string name="username">Username</string>

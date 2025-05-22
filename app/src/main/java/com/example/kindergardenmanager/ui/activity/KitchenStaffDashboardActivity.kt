@@ -1,6 +1,7 @@
 package com.example.kindergardenmanager.ui.activity
 
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import com.example.kindergardenmanager.R
 import com.example.kindergardenmanager.util.SessionManager
@@ -14,8 +15,9 @@ class KitchenStaffDashboardActivity : BaseDashboardActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kitchen_staff_dashboard)
         
-        // Set title
-        title = getString(R.string.kitchen_dashboard)
+        // Set up toolbar
+        val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
+        setupToolbar(toolbar, getString(R.string.kitchen_dashboard))
         
         // Get user details
         val userDetails = sessionManager.getUserDetails()
@@ -28,6 +30,10 @@ class KitchenStaffDashboardActivity : BaseDashboardActivity() {
         
         // Initialize UI components and functionality specific to Kitchen Staff role
         setupKitchenStaffFunctionality()
+
+        // Set up 'Sign Out' button
+        val btnSignOut = findViewById<Button>(R.id.btnSignOut)
+        setupSignOutButton(btnSignOut)
     }
     
     private fun setupKitchenStaffFunctionality() {

@@ -25,6 +25,10 @@ class UserRepository(private val userDao: UserDao) {
         return userDao.getUserByUsername(username)
     }
     
+    suspend fun getUserById(userId: Long): User? {
+        return userDao.getUserById(userId)
+    }
+    
     fun getUsersByRole(role: UserRole) = userDao.getUsersByRole(role)
     
     fun getAllUsers() = userDao.getAllUsers()

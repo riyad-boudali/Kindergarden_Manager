@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.kindergardenmanager.KindergardenApplication
@@ -39,6 +40,17 @@ class RegisterActivity : AppCompatActivity() {
         
         // Initialize session manager
         sessionManager = SessionManager(this)
+        
+        // Set up toolbar
+        val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+        
+        // Set up back button navigation
+        toolbar.setNavigationOnClickListener {
+            // Using the onBackPressedDispatcher instead of deprecated onBackPressed
+            onBackPressedDispatcher.onBackPressed()
+        }
         
         // Initialize ViewModel
         val kindergardenApp = application as KindergardenApplication

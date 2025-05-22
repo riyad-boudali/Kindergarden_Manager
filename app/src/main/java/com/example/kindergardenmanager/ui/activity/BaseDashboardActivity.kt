@@ -4,7 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.example.kindergardenmanager.R
 import com.example.kindergardenmanager.util.SessionManager
 
@@ -44,6 +47,24 @@ abstract class BaseDashboardActivity : AppCompatActivity() {
     }
     
     /**
+     * Set up toolbar with back button
+     */
+    protected fun setupToolbar(toolbar: Toolbar, title: String = "") {
+        setSupportActionBar(toolbar)
+        supportActionBar?.apply {
+            setDisplayHomeAsUpEnabled(true)
+            setDisplayShowHomeEnabled(true)
+            setDisplayShowTitleEnabled(title.isNotEmpty())
+            this.title = title
+        }
+        
+        toolbar.setNavigationOnClickListener {
+            // Using the onBackPressedDispatcher instead of deprecated onBackPressed
+            onBackPressedDispatcher.onBackPressed()
+        }
+    }
+    
+    /**
      * Logout the user and navigate to login screen
      */
     protected fun logout() {
@@ -59,5 +80,14 @@ abstract class BaseDashboardActivity : AppCompatActivity() {
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         startActivity(intent)
         finish()
+    }
+    
+    /**
+     * Set up the 'Sign Out' button functionality
+     */
+    protected fun setupSignOutButton(signOutButton: Button) {
+        signOutButton.setOnClickListener {
+            logout()
+        }
     }
 }

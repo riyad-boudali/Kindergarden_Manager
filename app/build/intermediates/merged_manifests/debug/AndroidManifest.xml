@@ -37,19 +37,76 @@
             android:exported="false" />
         <activity
             android:name="com.example.kindergardenmanager.ui.activity.RegisterActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName="com.example.kindergardenmanager.ui.activity.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.LoginActivity" />
+        </activity>
         <activity
             android:name="com.example.kindergardenmanager.ui.activity.AdminDashboardActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName="com.example.kindergardenmanager.ui.activity.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.LoginActivity" />
+        </activity>
         <activity
             android:name="com.example.kindergardenmanager.ui.activity.TeacherDashboardActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName="com.example.kindergardenmanager.ui.activity.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.LoginActivity" />
+        </activity>
         <activity
             android:name="com.example.kindergardenmanager.ui.activity.ParentDashboardActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName="com.example.kindergardenmanager.ui.activity.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.LoginActivity" />
+        </activity>
         <activity
             android:name="com.example.kindergardenmanager.ui.activity.KitchenStaffDashboardActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName="com.example.kindergardenmanager.ui.activity.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.example.kindergardenmanager.ui.activity.ViewUsersActivity"
+            android:exported="false"
+            android:parentActivityName="com.example.kindergardenmanager.ui.activity.AdminDashboardActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.AdminDashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.example.kindergardenmanager.ui.activity.AddUserActivity"
+            android:exported="false"
+            android:parentActivityName="com.example.kindergardenmanager.ui.activity.AdminDashboardActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.AdminDashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.example.kindergardenmanager.ui.activity.AppSettingsActivity"
+            android:exported="false"
+            android:parentActivityName="com.example.kindergardenmanager.ui.activity.AdminDashboardActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.AdminDashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.example.kindergardenmanager.ui.activity.EditUserActivity"
+            android:exported="false"
+            android:parentActivityName="com.example.kindergardenmanager.ui.activity.ViewUsersActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.ViewUsersActivity" />
+        </activity>
 
         <provider
             android:name="androidx.startup.InitializationProvider"

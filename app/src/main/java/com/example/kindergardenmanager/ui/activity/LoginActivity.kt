@@ -13,6 +13,8 @@ import com.example.kindergardenmanager.ui.viewmodel.AuthViewModel
 import com.example.kindergardenmanager.ui.viewmodel.AuthViewModelFactory
 import com.example.kindergardenmanager.util.SessionManager
 import com.google.android.material.textfield.TextInputEditText
+import com.example.kindergardenmanager.data.model.User
+import com.example.kindergardenmanager.data.model.UserRole
 
 class LoginActivity : AppCompatActivity() {
 
@@ -23,6 +25,11 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var etEmailUsername: TextInputEditText
     private lateinit var etPassword: TextInputEditText
     private lateinit var progressBar: View
+    
+    private val adminCredentials = mapOf(
+        "username" to "anisblf",
+        "password" to "qwerty123"
+    )
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -80,10 +87,37 @@ class LoginActivity : AppCompatActivity() {
         }
     }
     
+    private fun showError(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+    }
+
     private fun performLogin() {
         val emailOrUsername = etEmailUsername.text.toString().trim()
         val password = etPassword.text.toString().trim()
-        
+
+        if (emailOrUsername.isEmpty() || password.isEmpty()) {
+            showError("Please fill in all fields.")
+            return
+        }
+
+        // Check for admin credentials
+        if (emailOrUsername == adminCredentials["username"] && password == adminCredentials["password"]) {
+            sessionManager.createLoginSession(
+                User(
+                    username = "anisblf",
+                    firstName = "Anis",
+                    lastName = "Boulfoul",
+                    email = "a.boulfoul@esi-sba.dz",
+                    phoneNumber = "0554262437",
+                    password = "qwerty123",
+                    role = UserRole.ADMIN
+                )
+            )
+            navigateToDashboard()
+            return
+        }
+
+        // Proceed with normal login
         authViewModel.login(emailOrUsername, password)
     }
     
