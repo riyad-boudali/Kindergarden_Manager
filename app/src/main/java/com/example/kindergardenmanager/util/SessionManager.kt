@@ -71,6 +71,13 @@ class SessionManager(context: Context) {
     }
     
     /**
+     * Get current user ID
+     */
+    fun getUserId(): Long {
+        return preferences.getLong(KEY_USER_ID, -1)
+    }
+    
+    /**
      * Clear user session data
      */
     fun logoutUser() {

@@ -68,6 +68,22 @@ class AdminDashboardActivity : BaseDashboardActivity() {
             val intent = Intent(this, AppSettingsActivity::class.java)
             startActivity(intent)
         }
+        
+        // Set up 'Manage Classes' button
+        val btnManageClasses = findViewById<Button>(R.id.btnManageClasses)
+        btnManageClasses.setOnClickListener {
+            // Navigate to Manage Classes activity
+            val intent = Intent(this, ManageClassesActivity::class.java)
+            startActivity(intent)
+        }
+        
+        // Set up 'Manage Student Enrollments' button
+        val btnManageEnrollments = findViewById<Button>(R.id.btnManageEnrollments)
+        btnManageEnrollments.setOnClickListener {
+            // Navigate to Manage Enrollments activity
+            val intent = Intent(this, ManageEnrollmentsActivity::class.java)
+            startActivity(intent)
+        }
     }
     
     private fun setupAdminFunctionality() {

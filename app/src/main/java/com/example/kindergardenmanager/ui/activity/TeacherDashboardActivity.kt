@@ -1,5 +1,6 @@
 package com.example.kindergardenmanager.ui.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -37,10 +38,30 @@ class TeacherDashboardActivity : BaseDashboardActivity() {
     }
     
     private fun setupTeacherFunctionality() {
-        // TODO: Implement Teacher-specific functionality
-        // - View assigned classes and students
-        // - Take attendance
-        // - Record activities
-        // - Communicate with parents
+        // Set up 'My Classes' button
+        val btnViewClasses = findViewById<Button>(R.id.btnViewClasses)
+        btnViewClasses.setOnClickListener {
+            val intent = Intent(this, ViewClassesActivity::class.java)
+            startActivity(intent)
+        }
+        
+        // Set up 'Take Attendance' button
+        val btnAttendance = findViewById<Button>(R.id.btnAttendance)
+        btnAttendance.setOnClickListener {
+            val intent = Intent(this, ViewClassesForAttendanceActivity::class.java)
+            startActivity(intent)
+        }
+        
+        // Set up 'Messages' button
+        val btnMessages = findViewById<Button>(R.id.btnMessages)
+        btnMessages.setOnClickListener {
+            // TODO: Implement messaging functionality
+        }
+        
+        // Set up 'Create Announcement' button
+        val btnAnnouncements = findViewById<Button>(R.id.btnAnnouncements)
+        btnAnnouncements.setOnClickListener {
+            // TODO: Implement announcements functionality
+        }
     }
 }

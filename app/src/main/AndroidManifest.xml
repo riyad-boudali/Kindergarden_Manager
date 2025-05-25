@@ -102,6 +102,78 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.activity.ViewUsersActivity" />
         </activity>
+        
+        <activity
+            android:name=".ui.activity.ViewClassesActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.activity.TeacherDashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.TeacherDashboardActivity" />
+        </activity>
+        
+        <activity
+            android:name=".ui.activity.ClassDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.activity.ViewClassesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.ViewClassesActivity" />
+        </activity>
+        
+        <activity
+            android:name=".ui.activity.ViewClassesForAttendanceActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.activity.TeacherDashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.TeacherDashboardActivity" />
+        </activity>
+        
+        <activity
+            android:name=".ui.activity.TakeAttendanceActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.activity.ViewClassesForAttendanceActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.ViewClassesForAttendanceActivity" />
+        </activity>
+        
+        <activity
+            android:name=".ui.activity.ManageClassesActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.activity.AdminDashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.AdminDashboardActivity" />
+        </activity>
+        
+        <activity
+            android:name=".ui.activity.ClassDetailAdminActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.activity.ManageClassesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.ManageClassesActivity" />
+        </activity>
+        
+        <activity
+            android:name=".ui.activity.AddEditClassActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.activity.ManageClassesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.ManageClassesActivity" />
+        </activity>
+        
+        <activity
+            android:name=".ui.activity.ManageEnrollmentsActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.activity.AdminDashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.AdminDashboardActivity" />
+        </activity>
     </application>
 
 </manifest>

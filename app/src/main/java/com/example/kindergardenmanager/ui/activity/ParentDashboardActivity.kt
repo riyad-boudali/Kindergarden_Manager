@@ -1,8 +1,10 @@
 package com.example.kindergardenmanager.ui.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import com.example.kindergardenmanager.R
 import com.example.kindergardenmanager.util.SessionManager
 
@@ -37,10 +39,21 @@ class ParentDashboardActivity : BaseDashboardActivity() {
     }
     
     private fun setupParentFunctionality() {
-        // TODO: Implement Parent-specific functionality
-        // - View child's attendance and activities
-        // - View meal plans and menus
-        // - Communicate with teachers
-        // - View announcements
+        val btnViewChildren = findViewById<Button>(R.id.btnViewChildren)
+        val btnAttendance = findViewById<Button>(R.id.btnAttendance)
+        val btnMessages = findViewById<Button>(R.id.btnMessages)
+
+        btnViewChildren.setOnClickListener {
+            Toast.makeText(this, "Viewing children is not implemented yet.", Toast.LENGTH_SHORT).show()
+        }
+
+        btnAttendance.setOnClickListener {
+            Toast.makeText(this, "Viewing attendance records is not implemented yet.", Toast.LENGTH_SHORT).show()
+        }
+
+        btnMessages.setOnClickListener {
+            val intent = Intent(this, ViewMessagesActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

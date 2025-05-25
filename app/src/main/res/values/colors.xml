@@ -22,7 +22,15 @@
     
     <!-- Role-based background colors -->
     <color name="admin_background">#FFF8E0DE</color>
+    <color name="admin_secondary">#FFFF5722</color>
     <color name="teacher_background">#FFE3F2FD</color>
+    <color name="teacher_secondary">#FF2196F3</color>
     <color name="parent_background">#FFF3E5F5</color>
+    <color name="parent_secondary">#FF9C27B0</color>
     <color name="kitchen_background">#FFFFF3E0</color>
+    <color name="kitchen_secondary">#FFFF9800</color>
+    
+    <!-- Status colors -->
+    <color name="green_700">#FF388E3C</color>
+    <color name="red_700">#FFD32F2F</color>
 </resources>

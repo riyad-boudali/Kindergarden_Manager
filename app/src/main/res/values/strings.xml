@@ -35,4 +35,24 @@
     <string name="welcome">Welcome</string>
     <string name="logout">Logout</string>
     <string name="sign_out">Sign Out</string>
+    
+    <!-- Class Management -->
+    <string name="manage_classes">Manage Classes</string>
+    <string name="add_class">Add Class</string>
+    <string name="edit_class">Edit Class</string>
+    <string name="class_name">Class Name</string>
+    <string name="age_range_start">Age Range Start (years)</string>
+    <string name="age_range_end">Age Range End (years)</string>
+    <string name="capacity">Capacity</string>
+    <string name="room_number">Room Number</string>
+    <string name="description">Description</string>
+    <string name="select_teacher">Select Teacher</string>
+    <string name="is_active">Active</string>
+    <string name="save">Save</string>
+    <string name="manage_enrollments">Manage Student Enrollments</string>
+    <string name="select_class">Select a class</string>
+    <string name="enrolled_students">Enrolled Students</string>
+    <string name="available_students">Available Students</string>
+    <string name="no_students_enrolled">No students enrolled in this class</string>
+    <string name="no_available_students">No available students to enroll</string>
 </resources>
