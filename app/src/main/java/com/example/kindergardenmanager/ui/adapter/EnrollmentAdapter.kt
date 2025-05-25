@@ -23,7 +23,7 @@ class EnrollmentAdapter(
     private var children: List<Child>,
     private val enrollmentListener: EnrollmentListener,
     private val isEnrolled: Boolean,
-    private val parentMap: Map<Long, User> = emptyMap()
+    private val parentMap: MutableMap<Long, User> = mutableMapOf()
 ) : RecyclerView.Adapter<EnrollmentAdapter.EnrollmentViewHolder>() {
 
     // Interface for enrollment actions
@@ -50,8 +50,8 @@ class EnrollmentAdapter(
     }
     
     fun updateParentInfo(newParentMap: Map<Long, User>) {
-        (parentMap as MutableMap).clear()
-        (parentMap as MutableMap).putAll(newParentMap)
+        parentMap.clear()
+        parentMap.putAll(newParentMap)
         notifyDataSetChanged()
     }
     

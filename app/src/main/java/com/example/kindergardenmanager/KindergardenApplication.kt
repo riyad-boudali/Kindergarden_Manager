@@ -7,6 +7,7 @@ import com.example.kindergardenmanager.data.repository.ChildRepository
 import com.example.kindergardenmanager.data.repository.ClassRepository
 import com.example.kindergardenmanager.data.repository.MessageRepository
 import com.example.kindergardenmanager.data.repository.UserRepository
+import com.example.kindergardenmanager.util.SessionManager
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 
@@ -17,6 +18,11 @@ class KindergardenApplication : Application() {
     
     private val applicationScope = CoroutineScope(SupervisorJob())
     
+    // Session management
+    val sessionManager by lazy {
+        SessionManager(this)
+    }
+
     // Lazy initialize database
     val database by lazy { 
         KindergardenDatabase.getDatabase(this, applicationScope) 

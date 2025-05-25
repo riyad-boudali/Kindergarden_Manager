@@ -64,38 +64,47 @@ class ManageEnrollmentsActivity : AppCompatActivity(), EnrollmentAdapter.Enrollm
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_manage_enrollments)
         
-        // Set up toolbar
-        toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = "Manage Enrollments"
-        
-        // Initialize repositories
-        classRepository = (application as KindergardenApplication).classRepository
-        childRepository = (application as KindergardenApplication).childRepository
-        userRepository = (application as KindergardenApplication).userRepository
-        
-        // Initialize UI components
-        spinnerClasses = findViewById(R.id.spinnerClasses)
-        recyclerViewEnrolledStudents = findViewById(R.id.recyclerViewEnrolledStudents)
-        recyclerViewAvailableStudents = findViewById(R.id.recyclerViewAvailableStudents)
-        tvNoEnrolledStudents = findViewById(R.id.tvNoEnrolledStudents)
-        tvNoAvailableStudents = findViewById(R.id.tvNoAvailableStudents)
-        progressBar = findViewById(R.id.progressBar)
-        etSearchStudents = findViewById(R.id.etSearchStudents)
-        
-        // Set up adapters
-        enrolledAdapter = EnrollmentAdapter(this, emptyList(), this, true)
-        availableAdapter = EnrollmentAdapter(this, emptyList(), this, false)
-        
-        recyclerViewEnrolledStudents.adapter = enrolledAdapter
-        recyclerViewAvailableStudents.adapter = availableAdapter
-        
-        // Setup search functionality
-        setupSearch()
-        
-        // Show loading
-        showLoading(true)
+        try {
+            // Set up toolbar
+            toolbar = findViewById(R.id.toolbar)
+            setSupportActionBar(toolbar)
+            supportActionBar?.setDisplayHomeAsUpEnabled(true)
+            supportActionBar?.title = "Manage Enrollments"
+            
+            // Initialize repositories
+            classRepository = (application as KindergardenApplication).classRepository
+            childRepository = (application as KindergardenApplication).childRepository
+            userRepository = (application as KindergardenApplication).userRepository
+            
+            // Initialize UI components
+            spinnerClasses = findViewById(R.id.spinnerClasses)
+            recyclerViewEnrolledStudents = findViewById(R.id.recyclerViewEnrolledStudents)
+            recyclerViewAvailableStudents = findViewById(R.id.recyclerViewAvailableStudents)
+            tvNoEnrolledStudents = findViewById(R.id.tvNoEnrolledStudents)
+            tvNoAvailableStudents = findViewById(R.id.tvNoAvailableStudents)
+            progressBar = findViewById(R.id.progressBar)
+            etSearchStudents = findViewById(R.id.etSearchStudents)
+            
+            // Set up adapters
+            enrolledAdapter = EnrollmentAdapter(this, emptyList(), this, true)
+            availableAdapter = EnrollmentAdapter(this, emptyList(), this, false)
+            
+            recyclerViewEnrolledStudents.adapter = enrolledAdapter
+            recyclerViewAvailableStudents.adapter = availableAdapter
+            
+            // Setup search functionality
+            setupSearch()
+            
+            // Show loading
+            showLoading(true)
+        } catch (e: Exception) {
+            // Handle initialization errors
+            Toast.makeText(this, "Error initializing: ${e.message}", Toast.LENGTH_LONG).show()
+            // Log the error
+            android.util.Log.e("ManageEnrollmentsActivity", "Initialization error", e)
+            finish()
+            return
+        }
         
         // Load parent data (to show parent info for each child)
         loadParentData()

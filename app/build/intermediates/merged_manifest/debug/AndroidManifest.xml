@@ -171,6 +171,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.activity.AdminDashboardActivity" />
         </activity>
+        <activity
+            android:name="com.example.kindergardenmanager.ui.activity.ViewMessagesActivity"
+            android:exported="false"
+            android:parentActivityName="com.example.kindergardenmanager.ui.activity.ParentDashboardActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.ParentDashboardActivity" />
+        </activity>
 
         <provider
             android:name="androidx.startup.InitializationProvider"

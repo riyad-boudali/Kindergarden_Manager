@@ -52,28 +52,36 @@ class ManageClassesActivity : AppCompatActivity(), ClassAdminAdapter.ClassAdminC
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = "Manage Classes"
         
-        // Initialize repositories
-        classRepository = (application as KindergardenApplication).classRepository
-        userRepository = (application as KindergardenApplication).userRepository
-        childRepository = (application as KindergardenApplication).childRepository
-        
-        // Initialize views
-        recyclerView = findViewById(R.id.recyclerViewClasses)
-        progressBar = findViewById(R.id.progressBar)
-        tvNoClasses = findViewById(R.id.tvNoClasses)
-        
-        // Create adapter
-        adapter = ClassAdminAdapter(this, emptyList(), this)
-        recyclerView.adapter = adapter
-        
-        // Show loading
-        showLoading(true)
-        
-        // Load teacher data to cache
-        loadTeacherData()
-        
-        // Load all classes
-        loadClasses()
+        try {
+            // Initialize repositories
+            classRepository = (application as KindergardenApplication).classRepository
+            userRepository = (application as KindergardenApplication).userRepository
+            childRepository = (application as KindergardenApplication).childRepository
+            
+            // Initialize views
+            recyclerView = findViewById(R.id.recyclerViewClasses)
+            progressBar = findViewById(R.id.progressBar)
+            tvNoClasses = findViewById(R.id.tvNoClasses)
+            
+            // Create adapter
+            adapter = ClassAdminAdapter(this, emptyList(), this)
+            recyclerView.adapter = adapter
+            
+            // Show loading
+            showLoading(true)
+            
+            // Load teacher data to cache
+            loadTeacherData()
+            
+            // Load all classes
+            loadClasses()
+        } catch (e: Exception) {
+            // Handle initialization errors
+            Toast.makeText(this, "Error initializing: ${e.message}", Toast.LENGTH_LONG).show()
+            // Log the error
+            android.util.Log.e("ManageClassesActivity", "Initialization error", e)
+            finish()
+        }
     }
     
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

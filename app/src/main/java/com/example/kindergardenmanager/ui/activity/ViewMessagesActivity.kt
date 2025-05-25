@@ -5,6 +5,7 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.Observer
@@ -43,8 +44,14 @@ class ViewMessagesActivity : AppCompatActivity() {
 
         // Get current user ID from session
         val sessionManager = (application as KindergardenApplication).sessionManager
-        sessionManager.getUserDetails().let { userDetails ->
-            userId = userDetails["userId"]?.toLongOrNull() ?: 0
+        userId = sessionManager.getUserId()
+        
+        if (userId <= 0) {
+            // Log for debugging
+            android.util.Log.e("ViewMessagesActivity", "Invalid user ID: $userId")
+            Toast.makeText(this, "Error retrieving user information", Toast.LENGTH_SHORT).show()
+            finish()
+            return
         }
 
         if (userId == 0L) {
@@ -61,9 +68,12 @@ class ViewMessagesActivity : AppCompatActivity() {
         messageRepository = (application as KindergardenApplication).messageRepository
 
         // Set up adapter
-        adapter = MessageAdapter(this, emptyList(), userMap) { message ->
-            onMessageClick(message)
-        }
+        adapter = MessageAdapter(
+            context = this,
+            messages = emptyList(),
+            senderMap = userMap,
+            onMessageClick = { message -> onMessageClick(message) }
+        )
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this)
 

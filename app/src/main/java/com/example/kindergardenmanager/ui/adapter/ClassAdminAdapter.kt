@@ -18,8 +18,8 @@ class ClassAdminAdapter(
     private val context: Context,
     private var classes: List<KindergartenClass>,
     private val classClickListener: ClassAdminClickListener,
-    private val teacherMap: Map<Long, User> = emptyMap(),
-    private val studentCountMap: Map<Long, Int> = emptyMap()
+    private val teacherMap: MutableMap<Long, User> = mutableMapOf(),
+    private val studentCountMap: MutableMap<Long, Int> = mutableMapOf()
 ) : RecyclerView.Adapter<ClassAdminAdapter.ClassViewHolder>() {
 
     // Interface for class actions
@@ -47,13 +47,13 @@ class ClassAdminAdapter(
     }
     
     fun updateTeacherInfo(newTeacherMap: Map<Long, User>) {
-        (teacherMap as MutableMap).clear()
-        (teacherMap as MutableMap).putAll(newTeacherMap)
+        teacherMap.clear()
+        teacherMap.putAll(newTeacherMap)
         notifyDataSetChanged()
     }
     
     fun updateStudentCount(classId: Long, count: Int) {
-        (studentCountMap as MutableMap)[classId] = count
+        studentCountMap[classId] = count
         notifyDataSetChanged()
     }
     

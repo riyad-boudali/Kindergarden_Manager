@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-179:12
-INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-179:12
-INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-179:12
-INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-179:12
+ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-188:12
+INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-188:12
+INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-188:12
+INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-188:12
 MERGED from [androidx.room:room-ktx:2.5.0] /home/riyad/.gradle/caches/transforms-3/fc2e898f5e35d346a0d90e63a0b3206b/transformed/room-ktx-2.5.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.8.0] /home/riyad/.gradle/caches/transforms-3/9ae6143ba7d88d1cbf68916d08d2afcb/transformed/material-1.8.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/riyad/.gradle/caches/transforms-3/fe5722c2d28764b765710ac6c318c6e8/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
@@ -52,25 +52,25 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /home/riyad/.gradle/cache
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/riyad/.gradle/caches/transforms-3/7035a2135f2972f98fa12a92c56bc089/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/riyad/.gradle/caches/transforms-3/2ff53fee4bc33a1da5cdbfe55cfab510/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/riyad/.gradle/caches/transforms-3/a21766c7c1a00190a294c68fee7e28e6/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-179:12
-INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-179:12
-INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-179:12
+INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-188:12
+INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-188:12
+INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-188:12
 	package
 		ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:3:5-46
 		INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml
 		INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml
-		ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-179:12
+		ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-188:12
 		INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml
-		ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-179:12
+		ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:1-188:12
 		INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:5:5-177:19
+ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:5:5-186:19
 MERGED from [com.google.android.material:material:1.8.0] /home/riyad/.gradle/caches/transforms-3/9ae6143ba7d88d1cbf68916d08d2afcb/transformed/material-1.8.0/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.8.0] /home/riyad/.gradle/caches/transforms-3/9ae6143ba7d88d1cbf68916d08d2afcb/transformed/material-1.8.0/AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/riyad/.gradle/caches/transforms-3/fe5722c2d28764b765710ac6c318c6e8/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -267,6 +267,14 @@ ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/Androi
 		ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:171:13-37
 	android:name
 		ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:170:13-66
+activity#com.example.kindergardenmanager.ui.activity.ViewMessagesActivity
+ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:178:9-185:20
+	android:parentActivityName
+		ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:181:13-78
+	android:exported
+		ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:180:13-37
+	android:name
+		ADDED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml:179:13-61
 uses-sdk
 INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/riyad/Desktop/Projects/kindergarden_manager/app/src/main/AndroidManifest.xml
